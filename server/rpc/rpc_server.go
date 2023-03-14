@@ -7,10 +7,10 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/fireeye/gocrack/server/storage"
-	"github.com/fireeye/gocrack/server/workmgr"
-	"github.com/fireeye/gocrack/shared"
-	"github.com/fireeye/gocrack/shared/ginlog"
+	"github.com/blurbdust4/gocrack/server/storage"
+	"github.com/blurbdust4/gocrack/server/workmgr"
+	"github.com/blurbdust4/gocrack/shared"
+	"github.com/blurbdust4/gocrack/shared/ginlog"
 
 	"github.com/gin-gonic/gin"
 	"github.com/rs/zerolog/log"

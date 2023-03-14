@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/fireeye/gocrack/server/rpc"
+	"github.com/blurbdust4/gocrack/server/rpc"
 )
 
 // ChangeTaskStatus instructs the server to change the status of a task

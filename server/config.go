@@ -3,12 +3,12 @@ package server
 import (
 	"errors"
 
-	"github.com/fireeye/gocrack/server/authentication"
-	"github.com/fireeye/gocrack/server/filemanager"
-	"github.com/fireeye/gocrack/server/notifications"
-	"github.com/fireeye/gocrack/server/rpc"
-	"github.com/fireeye/gocrack/server/storage"
-	"github.com/fireeye/gocrack/server/web"
+	"github.com/blurbdust4/gocrack/server/authentication"
+	"github.com/blurbdust4/gocrack/server/filemanager"
+	"github.com/blurbdust4/gocrack/server/notifications"
+	"github.com/blurbdust4/gocrack/server/rpc"
+	"github.com/blurbdust4/gocrack/server/storage"
+	"github.com/blurbdust4/gocrack/server/web"
 )
 
 // Config describes all the configuration values of the GoCrack server

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/fireeye/gocrack/shared"
+	"github.com/blurbdust4/gocrack/shared"
 )
 
 var (

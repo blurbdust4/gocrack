@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/fireeye/gocrack/server/authentication"
-	"github.com/fireeye/gocrack/server/storage"
+	"github.com/blurbdust4/gocrack/server/authentication"
+	"github.com/blurbdust4/gocrack/server/storage"
 
 	"github.com/google/uuid"
 	ldap "gopkg.in/ldap.v2"

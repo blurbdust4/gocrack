@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/fireeye/gocrack/opencl"
+	"github.com/blurbdust4/gocrack/opencl"
 
 	"github.com/gin-gonic/gin"
 )

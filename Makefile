@@ -13,13 +13,13 @@ endif
 build:
 	mkdir -p builds/
 	go build -tags "$(WORKBUILDTAGS)" -o $(BINDIR)/gocrack_worker $(CFLAGS) -ldflags \
-		"-X github.com/fireeye/gocrack/worker.CompileRev=${BUILDREV} \
-		 -X github.com/fireeye/gocrack/worker.CompileTime=${BUILDDATE} \
-		 -X github.com/fireeye/gocrack/worker/engines/hashcat.HashcatVersion=${HASHCAT_VER}" \
+		"-X github.com/blurbdust4/gocrack/worker.CompileRev=${BUILDREV} \
+		 -X github.com/blurbdust4/gocrack/worker.CompileTime=${BUILDDATE} \
+		 -X github.com/blurbdust4/gocrack/worker/engines/hashcat.HashcatVersion=${HASHCAT_VER}" \
 		cmd/gocrack_worker/*.go
 	go build -tags "$(SERVBUILDTAGS)" -o $(BINDIR)/gocrack_server $(CFLAGS) -ldflags \
-		"-X github.com/fireeye/gocrack/server.CompileRev=${BUILDREV} \
-		 -X github.com/fireeye/gocrack/server.CompileTime=${BUILDDATE}" \
+		"-X github.com/blurbdust4/gocrack/server.CompileRev=${BUILDREV} \
+		 -X github.com/blurbdust4/gocrack/server.CompileTime=${BUILDDATE}" \
 		cmd/gocrack_server/*.go
 
 static_analysis:

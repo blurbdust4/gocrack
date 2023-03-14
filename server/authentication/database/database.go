@@ -3,8 +3,8 @@ package database
 import (
 	"fmt"
 
-	"github.com/fireeye/gocrack/server/authentication"
-	"github.com/fireeye/gocrack/server/storage"
+	"github.com/blurbdust4/gocrack/server/authentication"
+	"github.com/blurbdust4/gocrack/server/storage"
 
 	"github.com/rs/zerolog/log"
 	"golang.org/x/crypto/bcrypt"

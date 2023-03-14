@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/fireeye/gocrack/server/storage"
-	"github.com/fireeye/gocrack/shared"
+	"github.com/blurbdust4/gocrack/server/storage"
+	"github.com/blurbdust4/gocrack/shared"
 
 	jose "gopkg.in/square/go-jose.v2"
 	jwt "gopkg.in/square/go-jose.v2/jwt"

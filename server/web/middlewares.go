@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/fireeye/gocrack/server/storage"
+	"github.com/blurbdust4/gocrack/server/storage"
 
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
@@ -140,7 +140,7 @@ func (s *Server) checkIfUserIsEntitled(entityIDLookup string, documentType stora
 func checkParamValidUUID(paramName string) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		if uid := c.Param(paramName); uid != "" {
-			if _, err := uuid.FromString(uid); err != nil {
+			if _, err := uuid.Parse(uid); err != nil {
 				goto Error
 			}
 			// UUID checks out

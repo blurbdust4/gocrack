@@ -3,8 +3,8 @@ package web
 import (
 	"net/http"
 
-	"github.com/fireeye/gocat/v6/types"
-	"github.com/fireeye/gocrack/shared"
+	"github.com/blurbdust4/gocat/v6/types"
+	"github.com/blurbdust4/gocrack/shared"
 
 	"github.com/gin-gonic/gin"
 )

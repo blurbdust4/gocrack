@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/fireeye/gocrack/server/storage"
-	"github.com/fireeye/gocrack/shared"
+	"github.com/blurbdust4/gocrack/server/storage"
+	"github.com/blurbdust4/gocrack/shared"
 
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
@@ -160,7 +160,7 @@ func (s CreateTaskRequest) validate() []string {
 		errs = append(errs, "task_name must not be empty")
 	}
 
-	if _, err := uuid.FromString(s.FileID); err != nil {
+	if _, err := uuid.Parse(s.FileID); err != nil {
 		errs = append(errs, "file_id must be a valid UUID")
 	}
 
