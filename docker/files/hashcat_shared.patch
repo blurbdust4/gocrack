@@ -1,10 +1,22 @@
---- src/Makefile	2017-03-24 11:25:45.000000000 -0400
-+++ src/Makefile_new	2017-03-24 11:25:43.000000000 -0400
+diff --git a/src/Makefile b/src/Makefile
+index 04c1f7a0b..8a619f3f9 100644
+--- a/src/Makefile
++++ b/src/Makefile
 @@ -3,7 +3,7 @@
  ## License.....: MIT
  ##
 
--SHARED                  := 0
-+SHARED                  := 1
+-SHARED                  ?= 0
++SHARED                  ?= 1
  DEBUG                   := 0
- PRODUCTION              := 1
+ PRODUCTION              := 0
+ PRODUCTION_VERSION      := v6.2.6
+@@ -153,7 +153,7 @@ endif
+ ##
+
+ HASHCAT_FRONTEND        := hashcat
+-HASHCAT_LIBRARY         := libhashcat.so.$(VERSION_PURE)
++HASHCAT_LIBRARY         := libhashcat.so
+
+ ifeq ($(UNAME),Darwin)
+ HASHCAT_LIBRARY         := libhashcat.$(VERSION_PURE).dylib

@@ -35,6 +35,14 @@ github.com/beorn7/perks v1.0.1/go.mod h1:G2ZrVWU2WbWT9wwq4/hrbKbnv/1ERSJQ0ibhJ6r
 github.com/bgentry/speakeasy v0.1.0/go.mod h1:+zsyZBPWlz7T6j88CTgSN5bM796AkVf0kBD4zp0CCIs=
 github.com/blurbdust4/gocat/v6 v6.2.6 h1:Y5Nj0sS5tK8lK1rPoZYBVsG3J8uyFSfAC+tWyN/HQr0=
 github.com/blurbdust4/gocat/v6 v6.2.6/go.mod h1:vGvCvDv1AyoW0oXH6MAS1dHf7f3eQ/+FCgpsXZ4WwHU=
+github.com/blurbdust4/gocat/v6 v6.2.7-0.20230314214717-67b52aaafc91 h1:vKT51ZKU+e+V//p0z0vxJ2vl3NdujNm4QLVTPB6bTEI=
+github.com/blurbdust4/gocat/v6 v6.2.7-0.20230314214717-67b52aaafc91/go.mod h1:vGvCvDv1AyoW0oXH6MAS1dHf7f3eQ/+FCgpsXZ4WwHU=
+github.com/blurbdust4/gocat/v6 v6.2.7-0.20230314215950-0c858b739110 h1:DF6WcjF0ZyiEA8RcWPX/AhOuLCoi3sF2/X2dpXH+7+4=
+github.com/blurbdust4/gocat/v6 v6.2.7-0.20230314215950-0c858b739110/go.mod h1:vGvCvDv1AyoW0oXH6MAS1dHf7f3eQ/+FCgpsXZ4WwHU=
+github.com/blurbdust4/gocat/v6 v6.2.7-0.20230314220925-3d497c8de672 h1:5WwH+YP2EM4FEBLYoiv5ffJgIHHRVlbBLdi1qS0URAc=
+github.com/blurbdust4/gocat/v6 v6.2.7-0.20230314220925-3d497c8de672/go.mod h1:vGvCvDv1AyoW0oXH6MAS1dHf7f3eQ/+FCgpsXZ4WwHU=
+github.com/blurbdust4/gocat/v6 v6.2.7-0.20230314231154-ab6d1b759c7a h1:hRXuK/8KFBKOkSpO2ZbRb2qnz2aGppi5ShFBo7LxbWk=
+github.com/blurbdust4/gocat/v6 v6.2.7-0.20230314231154-ab6d1b759c7a/go.mod h1:vGvCvDv1AyoW0oXH6MAS1dHf7f3eQ/+FCgpsXZ4WwHU=
 github.com/casbin/casbin/v2 v2.1.2/go.mod h1:YcPU1XXisHhLzuxH9coDNf2FbKpjGlbCg3n9yuLkIJQ=
 github.com/cenkalti/backoff v2.2.1+incompatible/go.mod h1:90ReRw6GdpyfrHakVjL/QHaoyV4aDUVVkXQJJJ3NXXM=
 github.com/census-instrumentation/opencensus-proto v0.2.1/go.mod h1:f6KPmirojxKA12rnyqOA5BBL4O983OfeGPqjHWSTneU=

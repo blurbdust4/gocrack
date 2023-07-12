@@ -1,16 +1,16 @@
-
 module github.com/blurbdust4/gocrack
 
 go 1.12
 
 replace github.com/fireeye/gocrack => ./
+
 replace github.com/fireeye/gocat => ../gocat
 
 require (
 	github.com/DataDog/zstd v1.5.2 // indirect
 	github.com/StackExchange/wmi v1.2.1 // indirect
 	github.com/asdine/storm v0.0.0-20190418133842-e0f77eada154
-	github.com/blurbdust4/gocat/v6 v6.2.6
+	github.com/blurbdust4/gocat/v6 v6.2.7-0.20230314231154-ab6d1b759c7a
 	github.com/gin-contrib/cors v1.3.1
 	github.com/gin-gonic/gin v1.7.7
 	github.com/google/uuid v1.3.0

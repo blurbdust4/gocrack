@@ -1,8 +1,8 @@
 ROOT_PROJECT	:= gocrack
 PKG_AUTHOR		:= Christopher Schmitt <chris.schmitt@mandiant.com>
-HASHCAT_VERSION	:= v5.1.0
+HASHCAT_VERSION	:= v6.2.6
 
-GOCRACK_PROJ		:= github.com/fireeye/gocrack
+GOCRACK_PROJ		:= github.com/blurbdust4/gocrack
 GOCRACK_CODE_LOCAL	:= ${GOPATH}/src/$(GOCRACK_PROJ)
 EXTERNAL_DIR		:= $(CURDIR)/external
 HASHCAT_DIR			:= $(EXTERNAL_DIR)/hashcat
@@ -50,4 +50,4 @@ build_images: build_server_image build_worker_image
 clean:
 		@rm -rf $(DIST_DIR)
 
-build: hashcat gocrack build_server_image build_worker_image
+build: hashcat build_server_image build_worker_image

@@ -51,7 +51,7 @@ func (t *Task) DownloadFile(fileid string, filetype rpc.FileType) (string, error
 	case rpc.FileTypeEngine:
 		fp = filepath.Join(t.cfg.SaveEngineFilePath, fileid)
 	case rpc.FileTypeTask:
-		fp = filepath.Join(t.cfg.SaveTaskFilePath, fileid)
+		fp = filepath.Join(t.cfg.SaveTaskFilePath, fileid[0:2], fileid[2:4], fileid[4:6], fileid[6:8], fileid[9:11], fileid[11:13], fileid[14:16], fileid)
 	default:
 		return "", errors.New("unknown file type")
 	}

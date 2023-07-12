@@ -74,10 +74,18 @@ ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 
 COPY external/hashcat/deps/OpenCL-Headers/CL /usr/local/include/CL
 COPY external/hashcat/include /usr/local/include/hashcat
+COPY external/hashcat/deps/LZMA-SDK/C/LzmaDec.h /usr/local/include/hashcat/
+COPY external/hashcat/deps/LZMA-SDK/C/7zTypes.h /usr/local/include/hashcat/
+COPY external/hashcat/deps/LZMA-SDK/C/Lzma2Dec.h /usr/local/include/hashcat/
+COPY external/hashcat/OpenCL/inc_types.h /usr/local/include/hashcat/
+COPY external/hashcat/deps/zlib/contrib /usr/local/include/hashcat/
+COPY external/hashcat/deps/zlib/contrib/minizip /usr/local/include/hashcat/
 COPY dist/hashcat/lib/libhashcat.so /usr/local/lib/
 
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin"
 WORKDIR $GOPATH/src/$GOCRACK_PROJ
+RUN git clone https://$GOCRACK_PROJ.git $GOPATH/src/$GOCRACK_PROJ
+WORKDIR $GOPATH/src/$GOCRACK_PROJ/docker
 
 RUN useradd --non-unique --uid $USER_ID build
 USER build

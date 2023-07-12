@@ -6,6 +6,7 @@ import (
 	"io"
 	"os"
 	"time"
+	"strings"
 
 	"github.com/nightlyone/lockfile"
 	"github.com/rs/zerolog/log"
@@ -27,8 +28,19 @@ func checkFileHash(path string) (string, error) {
 	return fmt.Sprintf("%x", sh.Sum(nil)), nil
 }
 
+func firstN(s string, n int) string {
+	i := 0
+	for j := range s {
+	if i == n {
+		return s[:j]
+	}
+	i++
+	}
+	return s
+}
+
 func acquireLock(forFilePath string) (*lockfile.Lockfile, error) {
-	lckPath := fmt.Sprintf("%s.lck", forFilePath)
+	lckPath := fmt.Sprintf("%s.lck", strings.Replace(forFilePath, "-", "", -1))
 	theLock, err := lockfile.New(lckPath)
 	if err != nil {
 		return nil, err
@@ -52,6 +64,7 @@ func acquireLock(forFilePath string) (*lockfile.Lockfile, error) {
 			log.Debug().Str("lockfile", lckPath).Msg("Waiting for file lock...")
 		default:
 			// cant lock the file at this point :(
+			log.Debug().Str("lockfile", lckPath).Msg("In default case")
 			return nil, err
 		}
 	}
