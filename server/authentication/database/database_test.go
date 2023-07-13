@@ -5,9 +5,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/fireeye/gocrack/server/authentication"
-	test "github.com/fireeye/gocrack/server/authentication/test"
-	"github.com/fireeye/gocrack/server/storage"
+	"github.com/blurbdust4/gocrack/server/authentication"
+	test "github.com/blurbdust4/gocrack/server/authentication/test"
+	"github.com/blurbdust4/gocrack/server/storage"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"

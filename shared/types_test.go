@@ -3,7 +3,7 @@ package shared
 import (
 	"testing"
 
-	"github.com/fireeye/gocrack/opencl"
+	"github.com/blurbudst4/gocrack/opencl"
 	"github.com/stretchr/testify/assert"
 )
 

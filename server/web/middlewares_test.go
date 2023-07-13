@@ -7,7 +7,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/fireeye/gocrack/server/authentication"
+	"github.com/blurbdust4/gocrack/server/authentication"
 	"github.com/google/uuid"
 
 	"github.com/gin-gonic/gin"

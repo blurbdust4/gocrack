@@ -22,6 +22,8 @@ hashcat:
 			cd $(HASHCAT_DIR); \
 				git submodule update --init; \
 				git checkout $(HASHCAT_VERSION);
+		@mkdir -p $(HASHCAT_DIST)/share
+		@mkdir -p $(HASHCAT_DIST)/include
 		$(DOCKER_BUILD) -t $(ROOT_PROJECT)/hashcat_shared -f Dockerfile.hashcat.ubuntu $(CURDIR)
 		$(DOCKER_RUN) \
 			-v $(HASHCAT_DIST):/out \

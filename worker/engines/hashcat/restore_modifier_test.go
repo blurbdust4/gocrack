@@ -3,10 +3,10 @@ package hashcat
 import (
 	"testing"
 
-	"github.com/fireeye/gocat/v6/restoreutil"
-	"github.com/fireeye/gocrack/opencl"
-	"github.com/fireeye/gocrack/server/storage"
-	"github.com/fireeye/gocrack/shared"
+	"github.com/blurbdust4/gocat/v6/restoreutil"
+	"github.com/blurbdust4/gocrack/opencl"
+	"github.com/blurbdust4/gocrack/server/storage"
+	"github.com/blurbudst4/gocrack/shared"
 
 	"github.com/stretchr/testify/assert"
 )
